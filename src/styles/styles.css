@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply relative w-[100%] h-auto mobile:overflow-x-clip bg-background;
+}
+
+/* --- LOGO --- */
+
+.logo {
+  @apply absolute mobile:top-10 mobile:left-6;
+}
+
+/* --- IMAGES --- */
+
+.mobile-image {
+  @apply absolute mobile:block mobile:top-[-104px] mobile:left-[159px] mobile:-z-50 tablet:hidden desktop:hidden;
+}
+
+.tablet-image {
+  @apply mobile:hidden tablet:block desktop:hidden;
+}
+
+.desktop-image {
+  @apply mobile:hidden tablet:hidden desktop:block;
+}
+
+/* --- HERO SECTION --- */
+.hero-text-container {
+  @apply absolute mobile:top-[136px] mobile:mx-6 mobile:mb-[68px];
+}
+
+.hero-title {
+  @apply mobile:mb-[20px] text-eerie-black mobile:text-[2.5rem] mobile:leading-[3rem] mobile:font-bold;
+}
+
+.hero-para {
+  @apply text-eerie-black mobile:text-[1rem] mobile:leading-[1.625rem] mobile:font-normal;
+}
+
+/* --- CONTENT --- */
+.abstract-bg {
+  @apply absolute bg-eerie-black mobile:-z-40 mobile:top-[98px] mobile:w-[100%] mobile:h-[600px] rounded-[12px];
+}
+
+.abstract-img {
+  @apply mobile:mx-auto mobile:w-3/4;
+}
+
+.content-container {
+  @apply absolute mobile:top-[524px] mobile:mb-16;
+}
+
+.mobile {
+  @apply mobile:w-1/2 mobile:mx-auto mb-12;
+}
+
+.content-info {
+  @apply bg-outrageous-orange mobile:py-12 rounded-xl mobile:mt-[98px];
+}
+
+.content-title {
+  @apply text-snow font-bold text-[2rem] leading-[2.5rem] mx-9 mb-3;
+}
+
+.content-para {
+  @apply text-snow font-normal text-[1.125rem] leading-[1.75rem] mx-9 mb-9;
+}
+
+.subscription-cost {
+  @apply flex flex-row items-center text-snow ml-[42px];
+}
+
+.dollar-cost {
+  @apply font-bold text-[4.063rem] leading-[3.25rem] mr-4;
+}
+
+.monthly {
+  @apply font-normal text-[1.25rem] leading-[2rem];
+}
+
+/* --- BUTTONS --- */
+.btns {
+  @apply flex flex-col gap-4 justify-center items-center mobile:mt-12;
+}
+
+.apple-btn {
+  @apply flex flex-row gap-2 items-center py-[15px] px-[77px] bg-eerie-black rounded-xl;
+}
+
+.apple-text {
+  @apply text-snow font-bold text-[1.125rem] leading-[2rem];
+}
+
+.android-btn {
+  @apply flex flex-row gap-2 items-center py-[15px] px-[59px] bg-snow rounded-xl;
+}
+
+.android-text {
+  @apply text-eerie-black font-bold text-[1.125rem] leading-[2rem];
+}
+
+/* ---CONTACT SECTION --- */
+.contact {
+  @apply absolute mobile:top-[1612px] mobile:mx-3 mobile:mb-16;
+}
+
+.contact-logo {
+  @apply mobile:mb-8;
+}
+
+.contact-text {
+  @apply text-eerie-black text-[1rem] leading-[1.625rem] font-normal;
+}
+
+/* --- FOOTER --- */
+.social-footer {
+  @apply absolute flex flex-row gap-5 mobile:top-[1845px] mobile:pl-6 mobile:pb-20;
+}
