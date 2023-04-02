@@ -49,7 +49,7 @@
 }
 
 .abstract-img {
-  @apply mobile:mx-auto mobile:w-3/4;
+  @apply mobile:mx-auto mobile:w-[75%];
 }
 
 .content-container {
@@ -57,11 +57,11 @@
 }
 
 .mobile {
-  @apply mobile:w-1/2 mobile:mx-auto mb-12;
+  @apply mobile:w-[208.97px] mobile:h-[430px] mobile:mx-auto;
 }
 
 .content-info {
-  @apply bg-outrageous-orange mobile:py-12 rounded-xl mobile:mt-[98px];
+  @apply bg-outrageous-orange mobile:py-12 rounded-xl mobile:mt-[48px];
 }
 
 .content-title {
