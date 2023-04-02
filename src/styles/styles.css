@@ -14,8 +14,12 @@
 
 /* --- IMAGES --- */
 
+.image-container {
+  @apply absolute mobile:top-[-190px] mobile:left-[30px] mobile:-z-50 mobile:w-[135%] mobile:overflow-x-hidden;
+}
+
 .mobile-image {
-  @apply absolute mobile:block mobile:top-[-104px] mobile:left-[159px] mobile:-z-50 tablet:hidden desktop:hidden;
+  @apply mobile:block mobile:object-cover tablet:hidden desktop:hidden;
 }
 
 .tablet-image {
@@ -101,9 +105,13 @@
   @apply text-eerie-black font-bold text-[1.125rem] leading-[2rem];
 }
 
-/* ---CONTACT SECTION --- */
-.contact {
-  @apply absolute mobile:top-[1612px] mobile:mx-3 mobile:mb-16;
+/* --- FOOTER --- */
+.social-footer {
+  @apply absolute flex flex-col gap-5 mobile:top-[1612px] mobile:pl-6 mobile:pb-20;
+}
+
+.social-icons {
+  @apply flex flex-row gap-5 mobile:mt-16;
 }
 
 .contact-logo {
@@ -112,9 +120,4 @@
 
 .contact-text {
   @apply text-eerie-black text-[1rem] leading-[1.625rem] font-normal;
-}
-
-/* --- FOOTER --- */
-.social-footer {
-  @apply absolute flex flex-row gap-5 mobile:top-[1845px] mobile:pl-6 mobile:pb-20;
 }
